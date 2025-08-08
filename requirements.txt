@@ -1,3 +1,96 @@
-# airline_trends_app/requirements.txt
-Flask==2.3.2
+# requirements.txt - Production Dependencies
+
+# Core Flask and extensions
+Flask==3.0.0
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.5
+Flask-JWT-Extended==4.5.3
+Flask-Caching==2.1.0
+Flask-Limiter==3.5.0
+Flask-CORS==4.0.0
+Flask-Mail==0.9.1
+
+# Database
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.9
+alembic==1.13.0
+
+# Redis for caching and rate limiting
+redis==5.0.1
+
+# Background tasks
+celery==5.3.4
+flower==2.0.1
+
+# Data processing and ML
+pandas==2.1.3
+numpy==1.25.2
+scikit-learn==1.3.2
+tensorflow==2.15.0
+xgboost==2.0.1
+
+# API and data validation
+marshmallow==3.20.1
+marshmallow-sqlalchemy==0.29.0
+webargs==8.3.0
+
+# HTTP requests
 requests==2.31.0
+aiohttp==3.9.1
+httpx==0.25.2
+
+# Image processing (for property photos)
+Pillow==10.1.0
+opencv-python==4.8.1.78
+
+# Geographic data processing
+geopy==2.4.0
+folium==0.15.0
+
+# Natural Language Processing
+transformers==4.35.2
+torch==2.1.1
+nltk==3.8.1
+
+# Web scraping (for data collection)
+beautifulsoup4==4.12.2
+selenium==4.15.2
+scrapy==2.11.0
+
+# Monitoring and logging
+sentry-sdk[flask]==1.38.0
+prometheus-flask-exporter==0.23.0
+
+# Configuration and environment
+python-dotenv==1.0.0
+pydantic==2.5.0
+
+# Date and time handling
+python-dateutil==2.8.2
+pytz==2023.3
+
+# File handling
+openpyxl==3.1.2
+PyPDF2==3.0.1
+
+# Security
+bcrypt==4.1.1
+cryptography==41.0.8
+
+# Development and testing (optional in production)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+factory-boy==3.3.0
+
+# Production server
+gunicorn==21.2.0
+gevent==23.9.1
+
+# Documentation
+flasgger==0.9.7.1
+
+# Utilities
+click==8.1.7
+python-slugify==8.0.1
+validators==0.22.0
